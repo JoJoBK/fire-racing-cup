@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fire Racing Cup – Anmeldung</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(#d40000, #ff8c00);
+      color: #fff;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: #7CFF00;
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+    h2 {
+      color: #FFD700;
+    }
+    .box {
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      margin-top: 4px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background: #7CFF00;
+      color: #000;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #9dff3a;
+    }
+    .small {
+      font-size: 0.85em;
+      opacity: 0.9;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.75em;
+      margin-top: 30px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Fire Racing Cup</h1>
+    <h2>Feuerwehrverein Sieboldshausen</h2>
+
+    <div class="box">
+      <p><strong>📅 Datum:</strong> 15.02.2026</p>
+      <p><strong>🕒 Uhrzeit:</strong> 15:00 Uhr</p>
+      <p><strong>📍 Ort:</strong> Feuerwehrhaus Sieboldshausen</p>
+      <p><strong>💶 Startgeld:</strong> 10 € pro Person (vor Ort am Turniertag)</p>
+    </div>
+
+    <div class="box">
+      <h2>Turnierregeln</h2>
+      <ul>
+        <li>Gespielt wird Mario Kart 8 Deluxe</li>
+        <li>150ccm, kein Teammodus</li>
+        <li>Die Rennstrecken werden zufällig ausgewählt</li>
+        <li>Fair Play steht an erster Stelle</li>
+        <li>Teilnahme ab 10 Jahren</li>
+        <li>Den Anweisungen der Turnierleitung ist Folge zu leisten</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Anmeldung</h2>
+      <form action="https://formsubmit.co/feuerwehr-sieboldshausen@web.de" method="POST">
+        <input type="hidden" name="_subject" value="Neue Anmeldung – Fire Racing Cup" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <label>Vorname *</label>
+        <input type="text" name="Vorname" required />
+
+        <label>Nachname *</label>
+        <input type="text" name="Nachname" required />
+
+        <label>Alter *</label>
+        <input type="number" name="Alter" min="10" required />
+
+        <label>E-Mail-Adresse *</label>
+        <input type="email" name="E-Mail" required />
+
+        <label>Telefonnummer *</label>
+        <input type="tel" name="Telefon" required />
+
+        <label>Bemerkungen (optional)</label>
+        <textarea name="Bemerkungen" rows="3"></textarea>
+
+        <label>
+          <input type="checkbox" required />
+          Ich habe die Turnierregeln gelesen und stimme der Verarbeitung meiner Daten zur Durchführung der Veranstaltung zu.
+        </label>
+
+        <button type="submit">Jetzt anmelden</button>
+      </form>
+      <p class="small">Danke für deine Anmeldung! Wir freuen uns auf einen spannenden und fairen Racing-Nachmittag 🚒🏁</p>
+    </div>
+
+    <footer>
+      Mario Kart ist eine Marke von Nintendo. Diese Veranstaltung steht in keiner Verbindung zu Nintendo.<br />
+      Kontakt: feuerwehr-sieboldshausen@web.de
+    </footer>
+
+  </div>
+</body>
+</html>
